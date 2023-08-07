@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>webrtc client/server demo</title>
+  </head>
+  <body>
+    <script type="module" src="/src/main.ts"></script>
+    <div style="display: flex; gap: 30px">
+      <div id="server">
+        <h1>Server</h1>
+        <button>Start</button>
+        <div id="send-controls">
+          <input autocomplete="off" placeholder="user id" type="text">
+          <input autocomplete="off" placeholder="message" type="text">
+          <button>Send to User</button>
+        </div>
+        <div id="broadcast-controls">
+          <input autocomplete="off" placeholder="message" type="text">
+          <button>Broadcast</button>
+        </div>
+        <pre></pre>
+      </div>
+      <div id="client">
+        <h1>Client</h1>
+        <input autocomplete="off" placeholder="server id" type="text">
+        <button>Connect</button>
+        <div id="send-controls">
+          <input autocomplete="off" placeholder="message" type="text">
+          <button>Send to Server</button>
+        </div>
+        <pre></pre>
+      </div>
+  </div>
+  </body>
+</html>
